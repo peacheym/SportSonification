@@ -43,7 +43,9 @@ void loop() {
 
   if (IMU.accelerationAvailable()) {
     IMU.readAcceleration(x, y, z);
-    dataString = String(x) + "," + String(y) + "," + String(z);
+//    dataString = String(x) + "," + String(y) + "," + String(z);
+    dataString = String(x) + ",";
+
     Serial.println(dataString);
   }
 }
