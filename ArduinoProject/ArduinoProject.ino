@@ -60,6 +60,4 @@ void loop() {
   else {
     Serial.println("error opening datalog.txt");
   }
-
-  
 }
