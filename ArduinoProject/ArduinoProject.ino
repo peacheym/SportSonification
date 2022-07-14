@@ -11,6 +11,8 @@
 const int chipSelect = 10;
 
 void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
   Serial.begin(9600);
   while (!Serial);
   
