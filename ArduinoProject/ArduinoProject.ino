@@ -12,7 +12,8 @@ const int chipSelect = 10;
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, HIGH);
+//  digitalWrite(LED_BUILTIN, HIGH);
+  
   Serial.begin(9600);
   while (!Serial);
   
@@ -33,6 +34,7 @@ void setup() {
     while (1);
   }
   Serial.println("card initialized.");
+  digitalWrite(LED_BUILTIN, HIGH);
 
 }
 

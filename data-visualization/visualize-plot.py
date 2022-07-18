@@ -9,7 +9,7 @@ def smooth(y, box_pts):
     return y_smooth - 5
 
 
-f = open("./newdata.txt")
+f = open("./mixeddata.txt")
 
 x_axis = []
 y_axis = []
