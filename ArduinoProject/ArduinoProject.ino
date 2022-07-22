@@ -10,6 +10,8 @@
 // Pin 10 for Adafruit breakout board.
 const int chipSelect = 10;
 
+String s;
+
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 //  digitalWrite(LED_BUILTIN, HIGH);
@@ -36,6 +38,11 @@ void setup() {
   Serial.println("card initialized.");
   digitalWrite(LED_BUILTIN, HIGH);
 
+  
+  int r = 134;
+  s = String("log" + String(r) + ".txt");
+  Serial.println("Using file: " + s);
+
 }
 
 void loop() {
@@ -50,8 +57,8 @@ void loop() {
     dataString = String(x) + "," + String(y) + "," + String(z);
     Serial.println(dataString);
   }
+  File dataFile = SD.open(s, FILE_WRITE);
 
-  File dataFile = SD.open("datalog.txt", FILE_WRITE);
 
   // if the file is available, write to it:
   if (dataFile) {
@@ -62,6 +69,6 @@ void loop() {
   }
   // if the file isn't open, pop up an error:
   else {
-    Serial.println("error opening datalog.txt");
+    Serial.println(String("error opening " + s));
   }
 }

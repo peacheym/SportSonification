@@ -1,4 +1,3 @@
-from hashlib import new
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -9,7 +8,7 @@ def smooth(y, box_pts):
     return y_smooth - 5
 
 
-f = open("./mixeddata.txt")
+f = open("./newdata.txt")
 
 x_axis = []
 y_axis = []
@@ -42,7 +41,9 @@ avg_smooth = smooth(avg, window)
 avg_smooth[:window] = -10
 avg_smooth[-window:] = -10
 
-print(avg_smooth)
+print(type(avg_smooth))
+
+np.save('data.npy', avg_smooth)
 
 plt.plot([i for i in range(len(avg))], avg, label="Average")
 plt.plot([i for i in range(len(avg))], avg_smooth, label="Smooth", linewidth=3)
