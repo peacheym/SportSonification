@@ -5,10 +5,10 @@ import numpy as np
 def smooth(y, box_pts):
     box = np.ones(box_pts)/box_pts
     y_smooth = np.convolve(y, box, mode='same')
-    return y_smooth - 5
+    return y_smooth - 10
 
 
-f = open("./newdata.txt")
+f = open("./ergdata.txt")
 
 x_axis = []
 y_axis = []
@@ -36,7 +36,10 @@ plt.plot([i for i in range(len(z_axis))], z_axis, label="Z Axis")
 
 
 window = 10
-avg_smooth = smooth(avg, window)
+avg_smooth = smooth(z_axis, window)
+
+print(len(z_axis))
+print(len(z_axis) / 104)
 
 avg_smooth[:window] = -10
 avg_smooth[-window:] = -10

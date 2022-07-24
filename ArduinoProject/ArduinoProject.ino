@@ -39,7 +39,7 @@ void setup() {
   digitalWrite(LED_BUILTIN, HIGH);
 
   
-  int r = 134;
+  int r = 69;
   s = String("log" + String(r) + ".txt");
   Serial.println("Using file: " + s);
 
