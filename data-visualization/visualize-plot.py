@@ -49,7 +49,7 @@ print(type(avg_smooth))
 np.save('data.npy', avg_smooth)
 
 plt.plot([i for i in range(len(avg))], avg, label="Average")
-plt.plot([i for i in range(len(avg))], avg_smooth, label="Smooth", linewidth=3)
+plt.plot([i for i in range(len(avg))], avg_smooth, label="Smooth Z", linewidth=3)
 
 
 plt.legend()
