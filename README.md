@@ -25,4 +25,4 @@ A video demo of the entire sonification system working is available [here](https
 
 ## Presentation
 
-A copy of the slide show used for my final presentation of this project is available [here]("Multimedia%20Report.pdf).
+A copy of the slide show used for my final presentation of this project is available [here]("MultimediaReport.pdf).
