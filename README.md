@@ -21,6 +21,12 @@ This figure shows how the arduino was mounted to the ergometer.
 
 This screenshot shows the combination of a video capture and accelerometer data from a short rowing ergometer clip. The full video is avaliable on YouTube by clicking [here](https://youtu.be/hntFUQYL8Ns).
 
+![handles_ss](vis_ss.png)
+
+This figure shows how the accelerometer data was visualized in this instance.
+
+
+## Full Video Demo 
 A video demo of the entire sonification system working is available [here](https://youtu.be/oBo2xh0Tmmg).
 
 ## Presentation
