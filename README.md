@@ -13,7 +13,12 @@ This project was built using the following technologies:
 
 ## Demo
 
-A demo of the system working is available here.
+![erg_ss](https://user-images.githubusercontent.com/15327742/199531032-8ee982ed-5536-4b40-849c-d32f6cf1f2c2.png)
+
+
+This image shows the combination of a video capture and accelerometer data from a short rowing ergometer clip. The full video is avaliable [here](https://youtu.be/hntFUQYL8Ns).
+
+A video demo of the entire sonification system working is available [here](https://youtu.be/oBo2xh0Tmmg).
 
 
 ## Presentation
