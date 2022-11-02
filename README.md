@@ -6,7 +6,7 @@ This project focused on the sonification of accelerometer data captured from the
 
 This project was built using the following technologies:
 
-- Arduino Nano 33IoT
+- Arduino Nano 33 IoT
 - Adafruit SD Card Reader
 - libmapper
 - FAUST
