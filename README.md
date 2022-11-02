@@ -1,6 +1,8 @@
 # SportSonification
 
-This project focused on the sonification of accelerometer data captured from the handle of a rowing ergometer.
+This project focused on the sonification of accelerometer data captured from the handle of a rowing ergometer. This was acheived by capturing data and storing it on an SD card, initalizing a synthesizer built with FAUST, creating a libmapper connection between these two devices, and observing the results.
+
+More information on this project is provided below:
 
 ## Built Using
 
